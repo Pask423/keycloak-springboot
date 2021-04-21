@@ -10,6 +10,6 @@ It will run Keycloak docker image with configuration described in the article.
 Keycloak realm configuration is present in `realm.json` file. You can configure it from there.
 
 ### Keycloak and Spring Boot
-To set up this environment locally just run `depoly.sh` script in root project directory.
+To set up this environment locally just run `deploy.sh` script in root project directory.
 It will compile java application and prepare `springboot-keycloak-1.0.jar`. 
 Then script will run jar alongside Keycloak docker.
