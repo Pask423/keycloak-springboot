@@ -1,3 +1,7 @@
+## Info
+
+Repo for my article about securing [Spring Boot based REST APIs with Keycloak](https://dzone.com/articles/secure-spring-boot-application-with-keycloak).
+
 ## Running locally
 
 ##### Disclaimer
