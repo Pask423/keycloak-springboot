@@ -1,4 +1,4 @@
-package org.pcs.springboot.keycloak;
+package org.pcs.springboot.keycloak.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;

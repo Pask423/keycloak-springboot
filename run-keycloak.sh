@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run -p 8090:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin \
-    -v $(pwd)/realm.json:/tmp/realm.json \
-    -e KEYCLOAK_IMPORT=/tmp/realm.json \
-    quay.io/keycloak/keycloak:15.0.2
+docker run -p 8090:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin \
+    -v $(pwd)/realm:/opt/keycloak/data/import \
+    quay.io/keycloak/keycloak:22.0.0 \
+    start-dev --import-realm

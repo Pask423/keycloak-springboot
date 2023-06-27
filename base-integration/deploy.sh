@@ -8,4 +8,4 @@ fi
 
 mvn clean package
 nohup java -jar ./target/springboot-keycloak-1.0.jar > ./logs/springboot-logs.log &
-nohup ./run-keycloak.sh > ./logs/kc-logs.log
+nohup ../run-keycloak.sh > ./logs/kc-logs.log

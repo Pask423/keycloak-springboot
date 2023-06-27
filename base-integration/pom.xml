@@ -5,24 +5,24 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.4</version>
+        <version>2.7.13</version>
         <relativePath/>
     </parent>
     <groupId>org.pcs</groupId>
     <artifactId>springboot-keycloak</artifactId>
     <version>1.0</version>
     <name>springboot-keycloak</name>
-    <description>Spring Boot for basic integration with Keycloak</description>
+    <description>Basic integration between Spring Boot 3 and Keycloak</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-spring-boot-starter</artifactId>
-            <version>15.0.2</version>
+            <version>22.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -35,7 +35,7 @@
             <dependency>
                 <groupId>org.keycloak.bom</groupId>
                 <artifactId>keycloak-adapter-bom</artifactId>
-                <version>15.0.2</version>
+                <version>22.0.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
