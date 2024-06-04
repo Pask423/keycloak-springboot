@@ -1,16 +1,12 @@
 ## Info
 
-A common repository for Keycloak and Spring Boot article series
+A common repository for Keycloak and Spring Boot [article series](https://pasksoftware.com/series/#Security_Keycloak)
 
 1. Base integration: 
-   1. article: 
-      1. [Medium](https://medium.com/@PaskSoftware/secure-spring-boot-rest-api-with-keycloak-8b06a0575353)
-      2. [Dzone](https://dzone.com/articles/secure-spring-boot-application-with-keycloak)
+   1. article: [Pask Software](https://pasksoftware.com/spring-boot-keycloak/)
    2. [code](/base-integration)
 2. Base integration with Spring Boot 3:
-   1. article:
-      1. [Medium](https://medium.com/@PaskSoftware/secure-rest-api-with-keycloak-spring-boot-3-edition-e3bfdb71d12)
-      2. [Dzone](https://dzone.com/articles/spring-boot-3-keycloak)
+   1. article: [Pask Software](https://pasksoftware.com/spring-boot-3-keycloak/)
    2. [code](/base-integration-spring-boot-3)
 
 ## Running locally

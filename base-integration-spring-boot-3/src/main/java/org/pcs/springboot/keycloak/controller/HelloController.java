@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public ResponseEntity<String> hello(Authentication authentication) {
-        final String body = "Hello " + authentication.getName();
+        final String body = "Hello " + authentication.getName() + " from Spring Boot 3 by Pask423";
         return ResponseEntity.ok(body);
     }
 }

@@ -25,17 +25,11 @@ public class GlobalSecurityConfiguration {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests()
-                .anyRequest()
-                .authenticated();
-        http
-                .oauth2ResourceServer()
-                .jwt()
-                .jwtAuthenticationConverter(keycloakJwtTokenConverter);
-        http
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-        return http.build();
+        return http
+                .authorizeHttpRequests(customizer -> customizer.anyRequest().authenticated())
+                .oauth2ResourceServer(customizer -> customizer
+                        .jwt(jwtCustomizer -> jwtCustomizer.jwtAuthenticationConverter(keycloakJwtTokenConverter)))
+                .sessionManagement(customizer -> customizer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .build();
     }
 }
